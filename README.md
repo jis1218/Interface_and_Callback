@@ -7,7 +7,9 @@
 ##### - 기본형의 캐스팅 : int -> long 을 하면 메모리 공간이 쭉 늘어난다.
 ##### - 클래스의 캐스팅 : casting은 A extends B라고 하면 상위 클래스인 B의 메모리가 먼저 생기고 A가 생긴다. B a = new A(), a.method()라고 하면 B 안에 메서드의 이름만 참조하고 로직은 A 것을 참조한다.
 <br>
+
 ##### 예제
+
 ```java
 public class Animal {
 	public void cry(){
@@ -31,7 +33,9 @@ public class MainClass {
 	}
 }
 ```
+
 <br>
+
 ##### 2. Callback Method에 대하여
 ##### 안드로이드에서 Activity의 작업 중 foreground thread에서 돌릴 수 없는 긴 시간이 걸리는 작업 A는 background thread에서 처리하게 되는데, 그 경우 foreground의 작업 B는 A가 끝난 후 실행되어야 하나 먼저 실행될 수가 있으므로 callback을 통해 작업 A가 끝나고 나서 B를 실행한다.
 
